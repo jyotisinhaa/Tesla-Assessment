@@ -54,17 +54,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>3.0.5</version>
-				<configuration>
-					<appName>${heroku.appName}</appName>
-					<processTypes>
-						<web>java -jar target/assignment-0.0.1-SNAPSHOT.jar --server.port=$PORT</web>
-					</processTypes>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
